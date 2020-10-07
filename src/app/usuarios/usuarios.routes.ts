@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TablaUsuariosComponent } from './tabla-usuarios/tabla-usuarios.component';
 
 export const routes: Routes = [
-  { path: 'tabla', component: TablaUsuariosComponent }
+  { path: '', component: TablaUsuariosComponent }
 ]
 
 @NgModule({
