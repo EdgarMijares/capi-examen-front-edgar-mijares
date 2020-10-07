@@ -1,1 +1,38 @@
-<p>tabla-usuarios works!</p>
+<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+					<div class="table">
+
+						<div class="row header">
+							<div class="cell">
+								Nombre
+							</div>
+							<div class="cell">
+								Fecha de nacimiento
+							</div>
+							<div class="cell">
+								Edad
+							</div>
+							<div class="cell">
+								Direccion
+							</div>
+						</div>
+
+						<div class="row" *ngFor="let user of users">
+							<div class="cell" data-title="Full Name">
+								{{ user.name }}
+							</div>
+							<div class="cell" data-title="Age">
+								{{ user.fecha_nacimiento }}
+							</div>
+							<div class="cell" data-title="Job Title">
+								{{ user.edad }}
+							</div>
+							<div class="cell" data-title="Location">
+								{{ user.domicilio }} #{{ user.numero_exterior }}, {{ user.colonia }} - Ciudad {{ user.ciudad }}, C.P: {{ user.cp }}
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
